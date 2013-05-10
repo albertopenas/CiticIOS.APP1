@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E4FA22C173D1108008C5F70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4FA22B173D1108008C5F70 /* UIKit.framework */; };
+		6E4FA22E173D1108008C5F70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4FA22D173D1108008C5F70 /* Foundation.framework */; };
+		6E4FA230173D1108008C5F70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4FA22F173D1108008C5F70 /* CoreGraphics.framework */; };
+		6E4FA236173D1108008C5F70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E4FA234173D1108008C5F70 /* InfoPlist.strings */; };
+		6E4FA238173D1108008C5F70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FA237173D1108008C5F70 /* main.m */; };
+		6E4FA23C173D1108008C5F70 /* SWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FA23B173D1108008C5F70 /* SWAppDelegate.m */; };
+		6E4FA23E173D1108008C5F70 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4FA23D173D1108008C5F70 /* Default.png */; };
+		6E4FA240173D1108008C5F70 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4FA23F173D1108008C5F70 /* Default@2x.png */; };
+		6E4FA242173D1108008C5F70 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4FA241173D1108008C5F70 /* Default-568h@2x.png */; };
+		6E4FA245173D1108008C5F70 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4FA243173D1108008C5F70 /* MainStoryboard.storyboard */; };
+		6E4FA248173D1108008C5F70 /* SWFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FA247173D1108008C5F70 /* SWFirstViewController.m */; };
+		6E4FA24A173D1108008C5F70 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4FA249173D1108008C5F70 /* first.png */; };
+		6E4FA24C173D1108008C5F70 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4FA24B173D1108008C5F70 /* first@2x.png */; };
+		6E4FA24F173D1108008C5F70 /* SWSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FA24E173D1108008C5F70 /* SWSecondViewController.m */; };
+		6E4FA251173D1108008C5F70 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4FA250173D1108008C5F70 /* second.png */; };
+		6E4FA253173D1108008C5F70 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4FA252173D1108008C5F70 /* second@2x.png */; };
+		6E4FA25B173D1109008C5F70 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4FA25A173D1109008C5F70 /* SenTestingKit.framework */; };
+		6E4FA25C173D1109008C5F70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4FA22B173D1108008C5F70 /* UIKit.framework */; };
+		6E4FA25D173D1109008C5F70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4FA22D173D1108008C5F70 /* Foundation.framework */; };
+		6E4FA265173D1109008C5F70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E4FA263173D1109008C5F70 /* InfoPlist.strings */; };
+		6E4FA268173D1109008C5F70 /* FisrtAppiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FA267173D1109008C5F70 /* FisrtAppiOSTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E4FA25E173D1109008C5F70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E4FA220173D1108008C5F70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E4FA227173D1108008C5F70;
+			remoteInfo = FisrtAppiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E4FA228173D1108008C5F70 /* FisrtAppiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FisrtAppiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E4FA22B173D1108008C5F70 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6E4FA22D173D1108008C5F70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6E4FA22F173D1108008C5F70 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6E4FA233173D1108008C5F70 /* FisrtAppiOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FisrtAppiOS-Info.plist"; sourceTree = "<group>"; };
+		6E4FA235173D1108008C5F70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E4FA237173D1108008C5F70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E4FA239173D1108008C5F70 /* FisrtAppiOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FisrtAppiOS-Prefix.pch"; sourceTree = "<group>"; };
+		6E4FA23A173D1108008C5F70 /* SWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWAppDelegate.h; sourceTree = "<group>"; };
+		6E4FA23B173D1108008C5F70 /* SWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWAppDelegate.m; sourceTree = "<group>"; };
+		6E4FA23D173D1108008C5F70 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6E4FA23F173D1108008C5F70 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6E4FA241173D1108008C5F70 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6E4FA244173D1108008C5F70 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6E4FA246173D1108008C5F70 /* SWFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWFirstViewController.h; sourceTree = "<group>"; };
+		6E4FA247173D1108008C5F70 /* SWFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWFirstViewController.m; sourceTree = "<group>"; };
+		6E4FA249173D1108008C5F70 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		6E4FA24B173D1108008C5F70 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		6E4FA24D173D1108008C5F70 /* SWSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWSecondViewController.h; sourceTree = "<group>"; };
+		6E4FA24E173D1108008C5F70 /* SWSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWSecondViewController.m; sourceTree = "<group>"; };
+		6E4FA250173D1108008C5F70 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		6E4FA252173D1108008C5F70 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		6E4FA259173D1109008C5F70 /* FisrtAppiOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FisrtAppiOSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E4FA25A173D1109008C5F70 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		6E4FA262173D1109008C5F70 /* FisrtAppiOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FisrtAppiOSTests-Info.plist"; sourceTree = "<group>"; };
+		6E4FA264173D1109008C5F70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E4FA266173D1109008C5F70 /* FisrtAppiOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FisrtAppiOSTests.h; sourceTree = "<group>"; };
+		6E4FA267173D1109008C5F70 /* FisrtAppiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FisrtAppiOSTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E4FA225173D1108008C5F70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4FA22C173D1108008C5F70 /* UIKit.framework in Frameworks */,
+				6E4FA22E173D1108008C5F70 /* Foundation.framework in Frameworks */,
+				6E4FA230173D1108008C5F70 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E4FA255173D1109008C5F70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4FA25B173D1109008C5F70 /* SenTestingKit.framework in Frameworks */,
+				6E4FA25C173D1109008C5F70 /* UIKit.framework in Frameworks */,
+				6E4FA25D173D1109008C5F70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E4FA21F173D1108008C5F70 = {
+			isa = PBXGroup;
+			children = (
+				6E4FA231173D1108008C5F70 /* FisrtAppiOS */,
+				6E4FA260173D1109008C5F70 /* FisrtAppiOSTests */,
+				6E4FA22A173D1108008C5F70 /* Frameworks */,
+				6E4FA229173D1108008C5F70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E4FA229173D1108008C5F70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E4FA228173D1108008C5F70 /* FisrtAppiOS.app */,
+				6E4FA259173D1109008C5F70 /* FisrtAppiOSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E4FA22A173D1108008C5F70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E4FA22B173D1108008C5F70 /* UIKit.framework */,
+				6E4FA22D173D1108008C5F70 /* Foundation.framework */,
+				6E4FA22F173D1108008C5F70 /* CoreGraphics.framework */,
+				6E4FA25A173D1109008C5F70 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E4FA231173D1108008C5F70 /* FisrtAppiOS */ = {
+			isa = PBXGroup;
+			children = (
+				6E4FA23A173D1108008C5F70 /* SWAppDelegate.h */,
+				6E4FA23B173D1108008C5F70 /* SWAppDelegate.m */,
+				6E4FA243173D1108008C5F70 /* MainStoryboard.storyboard */,
+				6E4FA246173D1108008C5F70 /* SWFirstViewController.h */,
+				6E4FA247173D1108008C5F70 /* SWFirstViewController.m */,
+				6E4FA249173D1108008C5F70 /* first.png */,
+				6E4FA24B173D1108008C5F70 /* first@2x.png */,
+				6E4FA24D173D1108008C5F70 /* SWSecondViewController.h */,
+				6E4FA24E173D1108008C5F70 /* SWSecondViewController.m */,
+				6E4FA250173D1108008C5F70 /* second.png */,
+				6E4FA252173D1108008C5F70 /* second@2x.png */,
+				6E4FA232173D1108008C5F70 /* Supporting Files */,
+			);
+			path = FisrtAppiOS;
+			sourceTree = "<group>";
+		};
+		6E4FA232173D1108008C5F70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E4FA233173D1108008C5F70 /* FisrtAppiOS-Info.plist */,
+				6E4FA234173D1108008C5F70 /* InfoPlist.strings */,
+				6E4FA237173D1108008C5F70 /* main.m */,
+				6E4FA239173D1108008C5F70 /* FisrtAppiOS-Prefix.pch */,
+				6E4FA23D173D1108008C5F70 /* Default.png */,
+				6E4FA23F173D1108008C5F70 /* Default@2x.png */,
+				6E4FA241173D1108008C5F70 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E4FA260173D1109008C5F70 /* FisrtAppiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E4FA266173D1109008C5F70 /* FisrtAppiOSTests.h */,
+				6E4FA267173D1109008C5F70 /* FisrtAppiOSTests.m */,
+				6E4FA261173D1109008C5F70 /* Supporting Files */,
+			);
+			path = FisrtAppiOSTests;
+			sourceTree = "<group>";
+		};
+		6E4FA261173D1109008C5F70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E4FA262173D1109008C5F70 /* FisrtAppiOSTests-Info.plist */,
+				6E4FA263173D1109008C5F70 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E4FA227173D1108008C5F70 /* FisrtAppiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E4FA26B173D1109008C5F70 /* Build configuration list for PBXNativeTarget "FisrtAppiOS" */;
+			buildPhases = (
+				6E4FA224173D1108008C5F70 /* Sources */,
+				6E4FA225173D1108008C5F70 /* Frameworks */,
+				6E4FA226173D1108008C5F70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FisrtAppiOS;
+			productName = FisrtAppiOS;
+			productReference = 6E4FA228173D1108008C5F70 /* FisrtAppiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E4FA258173D1109008C5F70 /* FisrtAppiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E4FA26E173D1109008C5F70 /* Build configuration list for PBXNativeTarget "FisrtAppiOSTests" */;
+			buildPhases = (
+				6E4FA254173D1109008C5F70 /* Sources */,
+				6E4FA255173D1109008C5F70 /* Frameworks */,
+				6E4FA256173D1109008C5F70 /* Resources */,
+				6E4FA257173D1109008C5F70 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E4FA25F173D1109008C5F70 /* PBXTargetDependency */,
+			);
+			name = FisrtAppiOSTests;
+			productName = FisrtAppiOSTests;
+			productReference = 6E4FA259173D1109008C5F70 /* FisrtAppiOSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E4FA220173D1108008C5F70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SW;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Softwhipser;
+			};
+			buildConfigurationList = 6E4FA223173D1108008C5F70 /* Build configuration list for PBXProject "FisrtAppiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6E4FA21F173D1108008C5F70;
+			productRefGroup = 6E4FA229173D1108008C5F70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E4FA227173D1108008C5F70 /* FisrtAppiOS */,
+				6E4FA258173D1109008C5F70 /* FisrtAppiOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E4FA226173D1108008C5F70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4FA236173D1108008C5F70 /* InfoPlist.strings in Resources */,
+				6E4FA23E173D1108008C5F70 /* Default.png in Resources */,
+				6E4FA240173D1108008C5F70 /* Default@2x.png in Resources */,
+				6E4FA242173D1108008C5F70 /* Default-568h@2x.png in Resources */,
+				6E4FA245173D1108008C5F70 /* MainStoryboard.storyboard in Resources */,
+				6E4FA24A173D1108008C5F70 /* first.png in Resources */,
+				6E4FA24C173D1108008C5F70 /* first@2x.png in Resources */,
+				6E4FA251173D1108008C5F70 /* second.png in Resources */,
+				6E4FA253173D1108008C5F70 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E4FA256173D1109008C5F70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4FA265173D1109008C5F70 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E4FA257173D1109008C5F70 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E4FA224173D1108008C5F70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4FA238173D1108008C5F70 /* main.m in Sources */,
+				6E4FA23C173D1108008C5F70 /* SWAppDelegate.m in Sources */,
+				6E4FA248173D1108008C5F70 /* SWFirstViewController.m in Sources */,
+				6E4FA24F173D1108008C5F70 /* SWSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E4FA254173D1109008C5F70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4FA268173D1109008C5F70 /* FisrtAppiOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E4FA25F173D1109008C5F70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E4FA227173D1108008C5F70 /* FisrtAppiOS */;
+			targetProxy = 6E4FA25E173D1109008C5F70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E4FA234173D1108008C5F70 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E4FA235173D1108008C5F70 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6E4FA243173D1108008C5F70 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E4FA244173D1108008C5F70 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		6E4FA263173D1109008C5F70 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E4FA264173D1109008C5F70 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E4FA269173D1109008C5F70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6E4FA26A173D1109008C5F70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E4FA26C173D1109008C5F70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FisrtAppiOS/FisrtAppiOS-Prefix.pch";
+				INFOPLIST_FILE = "FisrtAppiOS/FisrtAppiOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6E4FA26D173D1109008C5F70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FisrtAppiOS/FisrtAppiOS-Prefix.pch";
+				INFOPLIST_FILE = "FisrtAppiOS/FisrtAppiOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6E4FA26F173D1109008C5F70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FisrtAppiOS.app/FisrtAppiOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FisrtAppiOS/FisrtAppiOS-Prefix.pch";
+				INFOPLIST_FILE = "FisrtAppiOSTests/FisrtAppiOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		6E4FA270173D1109008C5F70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FisrtAppiOS.app/FisrtAppiOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FisrtAppiOS/FisrtAppiOS-Prefix.pch";
+				INFOPLIST_FILE = "FisrtAppiOSTests/FisrtAppiOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E4FA223173D1108008C5F70 /* Build configuration list for PBXProject "FisrtAppiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E4FA269173D1109008C5F70 /* Debug */,
+				6E4FA26A173D1109008C5F70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E4FA26B173D1109008C5F70 /* Build configuration list for PBXNativeTarget "FisrtAppiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E4FA26C173D1109008C5F70 /* Debug */,
+				6E4FA26D173D1109008C5F70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6E4FA26E173D1109008C5F70 /* Build configuration list for PBXNativeTarget "FisrtAppiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E4FA26F173D1109008C5F70 /* Debug */,
+				6E4FA270173D1109008C5F70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E4FA220173D1108008C5F70 /* Project object */;
+}
