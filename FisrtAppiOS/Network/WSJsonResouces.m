@@ -25,10 +25,36 @@
     
     AFJSONRequestOperation *connection = [AFJSONRequestOperation JSONRequestOperationWithRequest:request
 success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-                                                                                             
+#ifndef NDEBUG
+    NSLog(@"[%@] %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+#endif
+
+    NSMutableArray *results = [[NSMutableArray alloc] init];
+    
+    for (NSDictionary *dic in JSON) {
+        SWResource *tmp = [[SWResource alloc] initWithName:[dic objectForKey:@"name"]
+                                               description:[dic objectForKey:@"description"] andUrlString:[dic objectForKey:@"link"]];
+        [results addObject:tmp];
+    }
+    
+    if ([results count] > 0) {
+        if ([controller respondsToSelector:@selector(updateView:)]) {
+            [controller performSelector:@selector(updateView:) withObject:results];
+        }
+    } else {
+        if ([controller respondsToSelector:@selector(updateWithErrors)]) {
+            [controller performSelector:@selector(updateWithErrors)];
+        }
+    }
+
 } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
     
+    if ([controller respondsToSelector:@selector(updateWithErrors)]) {
+        [controller performSelector:@selector(updateWithErrors)];
+    }
+    
 }];
+    
     [connection start];
 }
 

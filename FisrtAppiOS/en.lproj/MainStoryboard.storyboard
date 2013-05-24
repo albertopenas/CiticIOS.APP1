@@ -415,45 +415,158 @@
             </objects>
             <point key="canvasLocation" x="321" y="812"/>
         </scene>
-        <!--Table View Controller - Root View Controller-->
+        <!--Resources Table View Controller - Recursos-->
         <scene sceneID="mud-gz-Hdt">
             <objects>
-                <tableViewController id="N1L-35-CRE" sceneMemberID="viewController">
+                <tableViewController id="N1L-35-CRE" customClass="SWResourcesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vik-lZ-DbV">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="vxZ-9i-Bf9">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="GIK-6l-hFf" detailTextLabel="Yfu-fe-Rmw" style="IBUITableViewCellStyleSubtitle" id="vxZ-9i-Bf9">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIK-6l-hFf">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfu-fe-Rmw">
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="5W1-1y-0TA"/>
+                    <navigationItem key="navigationItem" title="Recursos" id="5W1-1y-0TA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Bz9-Qu-WKu">
+                            <connections>
+                                <action selector="showForm:" destination="N1L-35-CRE" id="Kxq-20-FOW"/>
+                                <segue destination="nHj-oa-py1" kind="modal" identifier="AddResource" modalTransitionStyle="flipHorizontal" id="eeK-5S-Sr9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <segue destination="HhK-lr-GnY" kind="push" id="zLG-ob-lNG"/>
+                        <segue destination="HhK-lr-GnY" kind="push" identifier="RSDetail" id="zLG-ob-lNG"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gdv-hN-mk0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-261" y="1486"/>
         </scene>
-        <!--View Controller-->
+        <!--Resource Form View Controller-->
+        <scene sceneID="4Hz-T2-Jzc">
+            <objects>
+                <viewController id="nHj-oa-py1" customClass="SWResourceFormViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SSV-hE-Gf1">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gi6-ba-mhw">
+                                <items>
+                                    <barButtonItem systemItem="cancel" id="AvU-wP-sJW">
+                                        <connections>
+                                            <action selector="back:" destination="nHj-oa-py1" id="ZEE-x6-ZG5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="4Wd-av-JMM"/>
+                                    <barButtonItem systemItem="save" id="kFP-6U-Oe8">
+                                        <connections>
+                                            <action selector="save:" destination="nHj-oa-py1" id="yhb-HS-vXU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre del recurso" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lPs-rO-GcF">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="nHj-oa-py1" id="gDA-wc-rUA"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripción" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SK3-xD-Ho6">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="nHj-oa-py1" id="19j-1D-BUc"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Url de acceso" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ogv-0W-Y6z">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" returnKeyType="send"/>
+                                <connections>
+                                    <outlet property="delegate" destination="nHj-oa-py1" id="Pjp-t2-mEc"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gi6-ba-mhw" firstAttribute="top" secondItem="SSV-hE-Gf1" secondAttribute="top" type="default" id="16D-rW-iKn"/>
+                            <constraint firstItem="gi6-ba-mhw" firstAttribute="leading" secondItem="SSV-hE-Gf1" secondAttribute="leading" type="default" id="2Op-5b-KwE"/>
+                            <constraint firstItem="lPs-rO-GcF" firstAttribute="leading" secondItem="SSV-hE-Gf1" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="2vx-Xk-S10"/>
+                            <constraint firstAttribute="trailing" secondItem="lPs-rO-GcF" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="GIh-Pc-RxI"/>
+                            <constraint firstItem="SK3-xD-Ho6" firstAttribute="top" secondItem="SSV-hE-Gf1" secondAttribute="top" constant="117" id="PGH-fl-LZq"/>
+                            <constraint firstAttribute="trailing" secondItem="SK3-xD-Ho6" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="PjZ-PL-dVj"/>
+                            <constraint firstItem="lPs-rO-GcF" firstAttribute="top" secondItem="SSV-hE-Gf1" secondAttribute="top" constant="66" id="RkX-qW-MXs"/>
+                            <constraint firstItem="gi6-ba-mhw" firstAttribute="trailing" secondItem="SSV-hE-Gf1" secondAttribute="trailing" type="default" id="cGI-0k-JYz"/>
+                            <constraint firstItem="ogv-0W-Y6z" firstAttribute="leading" secondItem="SSV-hE-Gf1" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="d6E-vn-cpl"/>
+                            <constraint firstItem="ogv-0W-Y6z" firstAttribute="top" secondItem="SSV-hE-Gf1" secondAttribute="top" constant="167" id="f8X-rr-IRK"/>
+                            <constraint firstAttribute="trailing" secondItem="ogv-0W-Y6z" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="hTb-tf-94Y"/>
+                            <constraint firstItem="SK3-xD-Ho6" firstAttribute="leading" secondItem="SSV-hE-Gf1" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="tSU-Qc-sbT"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="SK3-xD-Ho6" id="XSn-TS-Gy6"/>
+                        <outlet property="nameTextField" destination="lPs-rO-GcF" id="84k-qS-aVh"/>
+                        <outlet property="urlTextField" destination="ogv-0W-Y6z" id="Fjz-HC-vhI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQw-Lu-zG6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281" y="2094"/>
+        </scene>
+        <!--Resource Deteail View Controller-->
         <scene sceneID="MX4-1i-su7">
             <objects>
-                <viewController id="HhK-lr-GnY" sceneMemberID="viewController">
+                <viewController id="HhK-lr-GnY" customClass="SWResourceDeteailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V0c-8d-8oA">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RdL-rt-3uz">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="HhK-lr-GnY" id="TdZ-di-Gre"/>
+                                </connections>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RdL-rt-3uz" firstAttribute="leading" secondItem="V0c-8d-8oA" secondAttribute="leading" type="default" id="TuS-4Z-mka"/>
+                            <constraint firstItem="RdL-rt-3uz" firstAttribute="trailing" secondItem="V0c-8d-8oA" secondAttribute="trailing" type="default" id="YVJ-Vf-scR"/>
+                            <constraint firstItem="RdL-rt-3uz" firstAttribute="top" secondItem="V0c-8d-8oA" secondAttribute="top" type="default" id="v0W-bz-0oK"/>
+                            <constraint firstItem="RdL-rt-3uz" firstAttribute="bottom" secondItem="V0c-8d-8oA" secondAttribute="bottom" type="default" id="z3V-NW-LYK"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="etR-1e-MCU"/>
+                    <navigationItem key="navigationItem" id="etR-1e-MCU">
+                        <barButtonItem key="backBarButtonItem" title="Volver" id="5Ch-hV-xxV"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webview" destination="RdL-rt-3uz" id="Kzg-9Y-P6o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ivn-ab-YpK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -545,6 +658,28 @@
         </class>
         <class className="SWClasesViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SWClasesViewController.h"/>
+        </class>
+        <class className="SWResourceDeteailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWResourceDeteailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="SWResourceFormViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWResourceFormViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="save:"/>
+                <relationship kind="outlet" name="descriptionTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="nameTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="urlTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="SWResourcesTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWResourcesTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="showForm:"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

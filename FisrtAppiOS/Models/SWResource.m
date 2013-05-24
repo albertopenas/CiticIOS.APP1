@@ -17,6 +17,10 @@
     
     self = [super init];
     
+#ifndef NDEBUG
+    NSLog(@"[%@] %@ URL:%@", NSStringFromClass([self class]), NSStringFromSelector(_cmd), aUrlString);
+#endif
+    
     if (self) {
         _name = aName;
         _description = aDescription;
