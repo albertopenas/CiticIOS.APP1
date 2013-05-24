@@ -17,10 +17,8 @@
 		6E4FA240173D1108008C5F70 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4FA23F173D1108008C5F70 /* Default@2x.png */; };
 		6E4FA242173D1108008C5F70 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4FA241173D1108008C5F70 /* Default-568h@2x.png */; };
 		6E4FA245173D1108008C5F70 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4FA243173D1108008C5F70 /* MainStoryboard.storyboard */; };
-		6E4FA248173D1108008C5F70 /* SWFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FA247173D1108008C5F70 /* SWFirstViewController.m */; };
 		6E4FA24A173D1108008C5F70 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4FA249173D1108008C5F70 /* first.png */; };
 		6E4FA24C173D1108008C5F70 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4FA24B173D1108008C5F70 /* first@2x.png */; };
-		6E4FA24F173D1108008C5F70 /* SWSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FA24E173D1108008C5F70 /* SWSecondViewController.m */; };
 		6E4FA251173D1108008C5F70 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4FA250173D1108008C5F70 /* second.png */; };
 		6E4FA253173D1108008C5F70 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4FA252173D1108008C5F70 /* second@2x.png */; };
 		6E4FA25B173D1109008C5F70 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4FA25A173D1109008C5F70 /* SenTestingKit.framework */; };
@@ -28,6 +26,23 @@
 		6E4FA25D173D1109008C5F70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4FA22D173D1108008C5F70 /* Foundation.framework */; };
 		6E4FA265173D1109008C5F70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E4FA263173D1109008C5F70 /* InfoPlist.strings */; };
 		6E4FA268173D1109008C5F70 /* FisrtAppiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FA267173D1109008C5F70 /* FisrtAppiOSTests.m */; };
+		6E4FA276173D17CF008C5F70 /* AlumnosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FA275173D17CF008C5F70 /* AlumnosTableViewController.m */; };
+		6E4FA27A173D1C05008C5F70 /* SWCellAlumno.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FA279173D1C05008C5F70 /* SWCellAlumno.m */; };
+		6E4FA27C173D209A008C5F70 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4FA27B173D209A008C5F70 /* MapKit.framework */; };
+		6EC05058174E0BCC006047DE /* Alumno.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC05057174E0BCC006047DE /* Alumno.m */; };
+		6EC0505C174E23AC006047DE /* SQLiteAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC0505B174E23AC006047DE /* SQLiteAccess.m */; };
+		6EC0505E174E24C6006047DE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC0505D174E24C6006047DE /* libsqlite3.dylib */; };
+		6EC0505F174E2552006047DE /* SQLiteAccess.h in Sources */ = {isa = PBXBuildFile; fileRef = 6EC0505A174E23AC006047DE /* SQLiteAccess.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6EC05060174E2552006047DE /* SQLiteAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC0505B174E23AC006047DE /* SQLiteAccess.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6EC05063174E2634006047DE /* SWClasesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC05062174E2634006047DE /* SWClasesViewController.m */; };
+		6EC05066174E28C6006047DE /* Clase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC05065174E28C6006047DE /* Clase.m */; };
+		6EC05068174E2976006047DE /* citic.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6EC05067174E2976006047DE /* citic.sqlite */; };
+		6EC0506C174E29BA006047DE /* SQLiteAccess+Clases.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC0506B174E29BA006047DE /* SQLiteAccess+Clases.m */; };
+		6EC0506D174E2E09006047DE /* citic.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6EC05067174E2976006047DE /* citic.sqlite */; };
+		6EC05071174E305A006047DE /* BaseXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC05070174E305A006047DE /* BaseXmlParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6EC05074174E318B006047DE /* WSAlumnosXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC05073174E318B006047DE /* WSAlumnosXML.m */; };
+		6EC05077174E4266006047DE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC05075174E4266006047DE /* MBProgressHUD.m */; };
+		6EF9FE8B174EC00300C20F4E /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF9FE8A174EC00300C20F4E /* JSONKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +70,8 @@
 		6E4FA23F173D1108008C5F70 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6E4FA241173D1108008C5F70 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6E4FA244173D1108008C5F70 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		6E4FA246173D1108008C5F70 /* SWFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWFirstViewController.h; sourceTree = "<group>"; };
-		6E4FA247173D1108008C5F70 /* SWFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWFirstViewController.m; sourceTree = "<group>"; };
 		6E4FA249173D1108008C5F70 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		6E4FA24B173D1108008C5F70 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		6E4FA24D173D1108008C5F70 /* SWSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWSecondViewController.h; sourceTree = "<group>"; };
-		6E4FA24E173D1108008C5F70 /* SWSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWSecondViewController.m; sourceTree = "<group>"; };
 		6E4FA250173D1108008C5F70 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		6E4FA252173D1108008C5F70 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		6E4FA259173D1109008C5F70 /* FisrtAppiOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FisrtAppiOSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +80,31 @@
 		6E4FA264173D1109008C5F70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6E4FA266173D1109008C5F70 /* FisrtAppiOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FisrtAppiOSTests.h; sourceTree = "<group>"; };
 		6E4FA267173D1109008C5F70 /* FisrtAppiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FisrtAppiOSTests.m; sourceTree = "<group>"; };
+		6E4FA274173D17CF008C5F70 /* AlumnosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlumnosTableViewController.h; sourceTree = "<group>"; };
+		6E4FA275173D17CF008C5F70 /* AlumnosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlumnosTableViewController.m; sourceTree = "<group>"; };
+		6E4FA278173D1C05008C5F70 /* SWCellAlumno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCellAlumno.h; sourceTree = "<group>"; };
+		6E4FA279173D1C05008C5F70 /* SWCellAlumno.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCellAlumno.m; sourceTree = "<group>"; };
+		6E4FA27B173D209A008C5F70 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6EC05056174E0BCC006047DE /* Alumno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Alumno.h; path = Models/Alumno.h; sourceTree = "<group>"; };
+		6EC05057174E0BCC006047DE /* Alumno.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Alumno.m; path = Models/Alumno.m; sourceTree = "<group>"; };
+		6EC0505A174E23AC006047DE /* SQLiteAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteAccess.h; sourceTree = "<group>"; };
+		6EC0505B174E23AC006047DE /* SQLiteAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteAccess.m; sourceTree = "<group>"; };
+		6EC0505D174E24C6006047DE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		6EC05061174E2634006047DE /* SWClasesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWClasesViewController.h; path = Controllers/SWClasesViewController.h; sourceTree = "<group>"; };
+		6EC05062174E2634006047DE /* SWClasesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWClasesViewController.m; path = Controllers/SWClasesViewController.m; sourceTree = "<group>"; };
+		6EC05064174E28C6006047DE /* Clase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Clase.h; path = Models/Clase.h; sourceTree = "<group>"; };
+		6EC05065174E28C6006047DE /* Clase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Clase.m; path = Models/Clase.m; sourceTree = "<group>"; };
+		6EC05067174E2976006047DE /* citic.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = citic.sqlite; sourceTree = "<group>"; };
+		6EC0506A174E29BA006047DE /* SQLiteAccess+Clases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SQLiteAccess+Clases.h"; path = "Categories/SQLiteAccess+Clases.h"; sourceTree = "<group>"; };
+		6EC0506B174E29BA006047DE /* SQLiteAccess+Clases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SQLiteAccess+Clases.m"; path = "Categories/SQLiteAccess+Clases.m"; sourceTree = "<group>"; };
+		6EC0506F174E305A006047DE /* BaseXmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseXmlParser.h; sourceTree = "<group>"; };
+		6EC05070174E305A006047DE /* BaseXmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseXmlParser.m; sourceTree = "<group>"; };
+		6EC05072174E318B006047DE /* WSAlumnosXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSAlumnosXML.h; path = Network/WSAlumnosXML.h; sourceTree = "<group>"; };
+		6EC05073174E318B006047DE /* WSAlumnosXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSAlumnosXML.m; path = Network/WSAlumnosXML.m; sourceTree = "<group>"; };
+		6EC05075174E4266006047DE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		6EC05076174E4266006047DE /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		6EF9FE89174EC00300C20F4E /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		6EF9FE8A174EC00300C20F4E /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC0505E174E24C6006047DE /* libsqlite3.dylib in Frameworks */,
+				6E4FA27C173D209A008C5F70 /* MapKit.framework in Frameworks */,
 				6E4FA22C173D1108008C5F70 /* UIKit.framework in Frameworks */,
 				6E4FA22E173D1108008C5F70 /* Foundation.framework in Frameworks */,
 				6E4FA230173D1108008C5F70 /* CoreGraphics.framework in Frameworks */,
@@ -98,6 +136,8 @@
 		6E4FA21F173D1108008C5F70 = {
 			isa = PBXGroup;
 			children = (
+				6EC0505D174E24C6006047DE /* libsqlite3.dylib */,
+				6E4FA27B173D209A008C5F70 /* MapKit.framework */,
 				6E4FA231173D1108008C5F70 /* FisrtAppiOS */,
 				6E4FA260173D1109008C5F70 /* FisrtAppiOSTests */,
 				6E4FA22A173D1108008C5F70 /* Frameworks */,
@@ -128,17 +168,15 @@
 		6E4FA231173D1108008C5F70 /* FisrtAppiOS */ = {
 			isa = PBXGroup;
 			children = (
+				6EC0506E174E301C006047DE /* Network */,
+				6EC05069174E298F006047DE /* Categories */,
+				6EC05059174E2361006047DE /* Shared */,
+				6E4FA277173D1BEB008C5F70 /* CustomCell */,
+				6E4FA273173D11B9008C5F70 /* Controllers */,
+				6E4FA272173D11B2008C5F70 /* Models */,
 				6E4FA23A173D1108008C5F70 /* SWAppDelegate.h */,
 				6E4FA23B173D1108008C5F70 /* SWAppDelegate.m */,
 				6E4FA243173D1108008C5F70 /* MainStoryboard.storyboard */,
-				6E4FA246173D1108008C5F70 /* SWFirstViewController.h */,
-				6E4FA247173D1108008C5F70 /* SWFirstViewController.m */,
-				6E4FA249173D1108008C5F70 /* first.png */,
-				6E4FA24B173D1108008C5F70 /* first@2x.png */,
-				6E4FA24D173D1108008C5F70 /* SWSecondViewController.h */,
-				6E4FA24E173D1108008C5F70 /* SWSecondViewController.m */,
-				6E4FA250173D1108008C5F70 /* second.png */,
-				6E4FA252173D1108008C5F70 /* second@2x.png */,
 				6E4FA232173D1108008C5F70 /* Supporting Files */,
 			);
 			path = FisrtAppiOS;
@@ -147,6 +185,8 @@
 		6E4FA232173D1108008C5F70 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6EC05067174E2976006047DE /* citic.sqlite */,
+				6E4FA271173D116D008C5F70 /* Images */,
 				6E4FA233173D1108008C5F70 /* FisrtAppiOS-Info.plist */,
 				6E4FA234173D1108008C5F70 /* InfoPlist.strings */,
 				6E4FA237173D1108008C5F70 /* main.m */,
@@ -175,6 +215,81 @@
 				6E4FA263173D1109008C5F70 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E4FA271173D116D008C5F70 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6E4FA249173D1108008C5F70 /* first.png */,
+				6E4FA24B173D1108008C5F70 /* first@2x.png */,
+				6E4FA250173D1108008C5F70 /* second.png */,
+				6E4FA252173D1108008C5F70 /* second@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		6E4FA272173D11B2008C5F70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6EC05056174E0BCC006047DE /* Alumno.h */,
+				6EC05057174E0BCC006047DE /* Alumno.m */,
+				6EC05064174E28C6006047DE /* Clase.h */,
+				6EC05065174E28C6006047DE /* Clase.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6E4FA273173D11B9008C5F70 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E4FA274173D17CF008C5F70 /* AlumnosTableViewController.h */,
+				6E4FA275173D17CF008C5F70 /* AlumnosTableViewController.m */,
+				6EC05061174E2634006047DE /* SWClasesViewController.h */,
+				6EC05062174E2634006047DE /* SWClasesViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6E4FA277173D1BEB008C5F70 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				6E4FA278173D1C05008C5F70 /* SWCellAlumno.h */,
+				6E4FA279173D1C05008C5F70 /* SWCellAlumno.m */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		6EC05059174E2361006047DE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				6EC05075174E4266006047DE /* MBProgressHUD.m */,
+				6EC05076174E4266006047DE /* MBProgressHUD.h */,
+				6EC0506F174E305A006047DE /* BaseXmlParser.h */,
+				6EC05070174E305A006047DE /* BaseXmlParser.m */,
+				6EC0505A174E23AC006047DE /* SQLiteAccess.h */,
+				6EC0505B174E23AC006047DE /* SQLiteAccess.m */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		6EC05069174E298F006047DE /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6EC0506A174E29BA006047DE /* SQLiteAccess+Clases.h */,
+				6EC0506B174E29BA006047DE /* SQLiteAccess+Clases.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		6EC0506E174E301C006047DE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6EF9FE89174EC00300C20F4E /* JSONKit.h */,
+				6EF9FE8A174EC00300C20F4E /* JSONKit.m */,
+				6EC05072174E318B006047DE /* WSAlumnosXML.h */,
+				6EC05073174E318B006047DE /* WSAlumnosXML.m */,
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC0506D174E2E09006047DE /* citic.sqlite in Resources */,
 				6E4FA236173D1108008C5F70 /* InfoPlist.strings in Resources */,
 				6E4FA23E173D1108008C5F70 /* Default.png in Resources */,
 				6E4FA240173D1108008C5F70 /* Default@2x.png in Resources */,
@@ -266,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E4FA265173D1109008C5F70 /* InfoPlist.strings in Resources */,
+				6EC05068174E2976006047DE /* citic.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,10 +409,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC0505F174E2552006047DE /* SQLiteAccess.h in Sources */,
+				6EC05060174E2552006047DE /* SQLiteAccess.m in Sources */,
 				6E4FA238173D1108008C5F70 /* main.m in Sources */,
 				6E4FA23C173D1108008C5F70 /* SWAppDelegate.m in Sources */,
-				6E4FA248173D1108008C5F70 /* SWFirstViewController.m in Sources */,
-				6E4FA24F173D1108008C5F70 /* SWSecondViewController.m in Sources */,
+				6E4FA276173D17CF008C5F70 /* AlumnosTableViewController.m in Sources */,
+				6E4FA27A173D1C05008C5F70 /* SWCellAlumno.m in Sources */,
+				6EC05058174E0BCC006047DE /* Alumno.m in Sources */,
+				6EC05063174E2634006047DE /* SWClasesViewController.m in Sources */,
+				6EC05066174E28C6006047DE /* Clase.m in Sources */,
+				6EC0506C174E29BA006047DE /* SQLiteAccess+Clases.m in Sources */,
+				6EC05071174E305A006047DE /* BaseXmlParser.m in Sources */,
+				6EC05074174E318B006047DE /* WSAlumnosXML.m in Sources */,
+				6EC05077174E4266006047DE /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +430,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E4FA268173D1109008C5F70 /* FisrtAppiOSTests.m in Sources */,
+				6EC0505C174E23AC006047DE /* SQLiteAccess.m in Sources */,
+				6EF9FE8B174EC00300C20F4E /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +604,7 @@
 				6E4FA26D173D1109008C5F70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E4FA26E173D1109008C5F70 /* Build configuration list for PBXNativeTarget "FisrtAppiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +613,7 @@
 				6E4FA270173D1109008C5F70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
