@@ -18,7 +18,7 @@
     
     controller = aController;
     
-    NSURL *url = [NSURL URLWithString:@"http://10.19.17.63:3000"];
+    NSURL *url = [NSURL URLWithString:@"http://127.0.0.1:3000"];
     
     AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:url];
     

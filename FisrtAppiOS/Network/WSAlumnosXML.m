@@ -18,7 +18,7 @@
     // Asignamos para el protocolo informal
     controller = aController;
     
-    NSURL *url = [NSURL URLWithString:@"http://10.19.17.63:3000/stundents.xml"];
+    NSURL *url = [NSURL URLWithString:@"http://127.0.0.1:3000/stundents.xml"];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:30];
     
