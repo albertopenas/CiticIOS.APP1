@@ -18,7 +18,7 @@
     // Asignamos para el protocolo informal
     controller = aController;
     
-    NSURL *url = [NSURL URLWithString:@"http://127.0.0.1:3000/stundents.xml"];
+    NSURL *url = [NSURL URLWithString:@"http://10.19.17.63:3000/stundents.xml"];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:30];
     
@@ -93,6 +93,18 @@
         [tmpAlumno setCity:_contentsOfElement];
     } else if ([elementName isEqualToString:@"email"]) {
         [tmpAlumno setEmail:_contentsOfElement];
+    } else if ([elementName isEqualToString:@"image-url"]) {
+        NSString *cleanString = [_contentsOfElement stringByReplacingOccurrencesOfString:@" " withString:@""];
+        
+        cleanString = [cleanString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+        cleanString = [cleanString stringByReplacingOccurrencesOfString:@"\t" withString:@""];
+        
+#ifndef NDEBUG
+        NSLog(@"[%@] %@ Read image-url %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd), cleanString);
+#endif
+        
+        NSString *urlString = [NSString stringWithFormat:@"http://10.19.17.63:3000%@", cleanString];
+        [tmpAlumno setAvatarUrl:[[NSURL alloc] initWithString:urlString]];
     }
     
     if ([elementName isEqualToString:@"stundent"]) {
