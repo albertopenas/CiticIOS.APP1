@@ -24,6 +24,7 @@
         self.locationManager = [[CLLocationManager alloc] init];
         self.locationManager.delegate = self;
         self.locationManager.distanceFilter = 1;
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
     }
     
     return self;
@@ -34,13 +35,7 @@
     NSLog(@"[%@] %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
 #endif 
     
-    if ((newLocation.coordinate.latitude > oldLocation.coordinate.latitude + 0.002) ||
-        (newLocation.coordinate.latitude < oldLocation.coordinate.latitude - 0.002) ||
-        (newLocation.coordinate.longitude > oldLocation.coordinate.longitude + 0.002) ||
-        (newLocation.coordinate.longitude < oldLocation.coordinate.longitude - 0.002)){
-        [self.delegate locationUpdate:newLocation];
-    }
-    
+    [self.delegate locationUpdate:newLocation];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {

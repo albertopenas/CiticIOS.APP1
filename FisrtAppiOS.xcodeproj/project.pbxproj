@@ -106,6 +106,7 @@
 		6E4FA278173D1C05008C5F70 /* SWCellAlumno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCellAlumno.h; sourceTree = "<group>"; };
 		6E4FA279173D1C05008C5F70 /* SWCellAlumno.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCellAlumno.m; sourceTree = "<group>"; };
 		6E4FA27B173D209A008C5F70 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6E90D4441757F3A1002A3A9A /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		6EBE610C1757658E0019FF07 /* SWAlumnoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWAlumnoDetailViewController.h; path = Controllers/SWAlumnoDetailViewController.h; sourceTree = "<group>"; };
 		6EBE610D1757658E0019FF07 /* SWAlumnoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWAlumnoDetailViewController.m; path = Controllers/SWAlumnoDetailViewController.m; sourceTree = "<group>"; };
 		6EBE610F1757673D0019FF07 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -350,6 +351,7 @@
 				6EC05070174E305A006047DE /* BaseXmlParser.m */,
 				6EC0505A174E23AC006047DE /* SQLiteAccess.h */,
 				6EC0505B174E23AC006047DE /* SQLiteAccess.m */,
+				6E90D4441757F3A1002A3A9A /* Constants.h */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
