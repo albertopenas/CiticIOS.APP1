@@ -34,6 +34,7 @@
 		6EBE6112175767500019FF07 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBE6111175767500019FF07 /* CoreMotion.framework */; };
 		6EBE611517576BD20019FF07 /* CiticAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBE611417576BD20019FF07 /* CiticAnnotation.m */; };
 		6EBE6118175770010019FF07 /* SWLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBE6116175770010019FF07 /* SWLocationManager.m */; };
+		6EBE611B17577A000019FF07 /* BasicAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBE611A17577A000019FF07 /* BasicAnnotation.m */; };
 		6EC05058174E0BCC006047DE /* Alumno.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC05057174E0BCC006047DE /* Alumno.m */; };
 		6EC0505C174E23AC006047DE /* SQLiteAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC0505B174E23AC006047DE /* SQLiteAccess.m */; };
 		6EC0505E174E24C6006047DE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC0505D174E24C6006047DE /* libsqlite3.dylib */; };
@@ -113,6 +114,8 @@
 		6EBE611417576BD20019FF07 /* CiticAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CiticAnnotation.m; path = Models/CiticAnnotation.m; sourceTree = "<group>"; };
 		6EBE6116175770010019FF07 /* SWLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLocationManager.m; sourceTree = "<group>"; };
 		6EBE6117175770010019FF07 /* SWLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWLocationManager.h; sourceTree = "<group>"; };
+		6EBE611917577A000019FF07 /* BasicAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicAnnotation.h; path = Models/BasicAnnotation.h; sourceTree = "<group>"; };
+		6EBE611A17577A000019FF07 /* BasicAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicAnnotation.m; path = Models/BasicAnnotation.m; sourceTree = "<group>"; };
 		6EC05056174E0BCC006047DE /* Alumno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Alumno.h; path = Models/Alumno.h; sourceTree = "<group>"; };
 		6EC05057174E0BCC006047DE /* Alumno.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Alumno.m; path = Models/Alumno.m; sourceTree = "<group>"; };
 		6EC0505A174E23AC006047DE /* SQLiteAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteAccess.h; sourceTree = "<group>"; };
@@ -302,6 +305,8 @@
 				6EE0966B174F58CF005E8BD1 /* SWResource.m */,
 				6EBE611317576BD20019FF07 /* CiticAnnotation.h */,
 				6EBE611417576BD20019FF07 /* CiticAnnotation.m */,
+				6EBE611917577A000019FF07 /* BasicAnnotation.h */,
+				6EBE611A17577A000019FF07 /* BasicAnnotation.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -548,6 +553,7 @@
 				6EBE610E1757658E0019FF07 /* SWAlumnoDetailViewController.m in Sources */,
 				6EBE611517576BD20019FF07 /* CiticAnnotation.m in Sources */,
 				6EBE6118175770010019FF07 /* SWLocationManager.m in Sources */,
+				6EBE611B17577A000019FF07 /* BasicAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

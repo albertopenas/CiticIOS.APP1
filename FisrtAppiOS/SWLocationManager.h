@@ -16,8 +16,8 @@
 
 @interface SWLocationManager : NSObject <CLLocationManagerDelegate>
 
-@property (nonatomic, retain) CLLocationManager *locationManager;  
-@property (nonatomic, assign) id delegate;
+@property (nonatomic, strong) CLLocationManager *locationManager;
+@property (nonatomic, weak) id delegate;
 
 - (void)locationManager:(CLLocationManager *)manager
     didUpdateToLocation:(CLLocation *)newLocation

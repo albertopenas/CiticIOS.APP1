@@ -84,20 +84,17 @@
 #ifndef NDEBUG
     NSLog(@"[%@] %@ EN:%@ CONT:%@", NSStringFromClass([self class]), NSStringFromSelector(_cmd), elementName, _contentsOfElement);
 #endif
+    NSString *cleanString = [_contentsOfElement stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
     if ([elementName isEqualToString:@"name"]) {
-        [tmpAlumno setName:_contentsOfElement];
+        [tmpAlumno setName:cleanString];
     } else if ([elementName isEqualToString:@"lastname"]) {
-        [tmpAlumno setLastname:_contentsOfElement];
+        [tmpAlumno setLastname:cleanString];
     } else if ([elementName isEqualToString:@"city"]) {
-        [tmpAlumno setCity:_contentsOfElement];
+        [tmpAlumno setCity:cleanString];
     } else if ([elementName isEqualToString:@"email"]) {
-        [tmpAlumno setEmail:_contentsOfElement];
+        [tmpAlumno setEmail:cleanString];
     } else if ([elementName isEqualToString:@"image-url"]) {
-        NSString *cleanString = [_contentsOfElement stringByReplacingOccurrencesOfString:@" " withString:@""];
-        
-        cleanString = [cleanString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-        cleanString = [cleanString stringByReplacingOccurrencesOfString:@"\t" withString:@""];
         
 #ifndef NDEBUG
         NSLog(@"[%@] %@ Read image-url %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd), cleanString);

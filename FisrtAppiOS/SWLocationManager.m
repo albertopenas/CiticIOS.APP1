@@ -21,9 +21,9 @@
     self = [super init];
     
     if (self) {
-        self.locationManager = [[[CLLocationManager alloc] init] autorelease];
+        self.locationManager = [[CLLocationManager alloc] init];
         self.locationManager.delegate = self;
-        self.locationManager.purpose = @"Para ofrecerle unos mejores resultados acepte usar el geoposicionamiento con Aecomo";
+        self.locationManager.distanceFilter = 1;
     }
     
     return self;
@@ -49,11 +49,6 @@
 #endif 
     
 	[self.delegate locationError:error];
-}
-
-- (void)dealloc {
-    [self.locationManager release];
-    [super dealloc];
 }
 
 @end
