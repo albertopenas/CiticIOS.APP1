@@ -100,7 +100,7 @@
         NSLog(@"[%@] %@ Read image-url %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd), cleanString);
 #endif
         
-        NSString *urlString = [NSString stringWithFormat:@"http://10.19.17.63:3000%@", cleanString];
+        NSString *urlString = [NSString stringWithFormat:@"%@%@", kLocalUrl, cleanString];
         [tmpAlumno setAvatarUrl:[[NSURL alloc] initWithString:urlString]];
     }
     
