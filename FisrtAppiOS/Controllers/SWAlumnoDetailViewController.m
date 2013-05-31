@@ -78,24 +78,52 @@
     region.center = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude);
     
     [_mapView setRegion:region animated:YES];
+    
+    [self drawRoute];
 }
 
-- (void)drawRoutes {
+- (void) drawRoute {
 #ifndef NDEBUG
     NSLog(@"[%@] %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
 #endif
     
-    CLLocation *loc1 = [[CLLocation alloc] initWithLatitude:43.3222746
-                                                  longitude:-8.403070];
-    CLLocation *loc2 = [[CLLocation alloc] initWithLatitude:43.3213746
-                                                  longitude:-8.411070];
-    CLLocation *loc3 = [[CLLocation alloc] initWithLatitude:43.3212546
-                                                  longitude:-8.414570];
+    NSInteger numberOfPoints = 3;
     
-    NSArray *coordinates = [NSArray arrayWithObjects:loc1.coordinate, loc2.coordinate, loc3.co,nil];
+    CLLocationCoordinate2D coordinates[numberOfPoints];
     
-    MKPolyline *polyline = [MKPolyline polylineWithCoordinates:coordinates count:3];
+    CLLocation *location1 = [[CLLocation alloc] initWithLatitude:43.3212546
+                                                       longitude:-8.414570];
+    CLLocationCoordinate2D coordinate1 = location1.coordinate;
+    coordinates[0] = coordinate1;
+    
+    CLLocation *location2 = [[CLLocation alloc] initWithLatitude:43.3213746
+                                                       longitude:-8.411070];
+    CLLocationCoordinate2D coordinate2 = location2.coordinate;
+    coordinates[1] = coordinate2;
+    
+    CLLocation *location3 = [[CLLocation alloc] initWithLatitude:43.3222746
+                                                       longitude:-8.403070];
+    CLLocationCoordinate2D coordinate3 = location3.coordinate;
+    coordinates[2] = coordinate3;
+    
+    
+    MKPolyline *polyLine = [MKPolyline polylineWithCoordinates:coordinates
+                                                         count:numberOfPoints];
+    
+    [_mapView addOverlay:polyLine];
+}
 
+#pragma mark - MapViewDelegate
+- (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id <MKOverlay>)overlay {
+#ifndef NDEBUG
+    NSLog(@"[%@] %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+#endif
+    
+    MKPolylineView *polylineView = [[MKPolylineView alloc] initWithPolyline:overlay];
+    polylineView.strokeColor = [UIColor blueColor];
+    polylineView.lineWidth = 4.0;
+    
+    return polylineView;
 }
 
 

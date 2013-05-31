@@ -9,31 +9,96 @@
 #import "WSPostResource.h"
 #import "SWResourceFormViewController.h"
 
-@interface SWResourceFormViewController ()
+@interface SWResourceFormViewController () {
+    UITextField *selectedTextField;
+}
 
 @end
 
 @implementation SWResourceFormViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
+#ifndef NDEBUG
+    NSLog(@"[%@] %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+#endif
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)viewWillAppear:(BOOL)animated {
+#ifndef NDEBUG
+    NSLog(@"[%@] %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+#endif
+    [super viewWillAppear:animated];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardUp)
+                                                 name:UIKeyboardWillShowNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardHidden)
+                                                 name:UIKeyboardWillHideNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(hideKeyboard:)
+                                                 name:@"hide"
+                                               object:nil];
+    
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+#ifndef NDEBUG
+    NSLog(@"[%@] %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+#endif
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UIKeyboardWillShowNotification
+                                                  object:nil];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UIKeyboardWillHideNotification
+                                                  object:nil];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:@"hide"
+                                                  object:nil];
+}
+
+#pragma mark - Keyboard Methods
+- (void)keyboardUp {
+#ifndef NDEBUG
+    NSLog(@"[%@] %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+#endif
+   
+    [_scrollView setFrame:CGRectMake(_scrollView.frame.origin.x,
+                                     _scrollView.frame.origin.y,
+                                     _scrollView.frame.size.width,
+                                     _scrollView.frame.size.height - 216.0f)];
+    
+    [_scrollView setContentSize:CGSizeMake(320, 290)];
+    
+    [_scrollView scrollRectToVisible:CGRectMake(selectedTextField.frame.origin.x,
+                                                selectedTextField.frame.origin.y,
+                                                selectedTextField.frame.size.width,
+                                                selectedTextField.frame.size.height+30.f)
+                                                animated:YES];
+}
+
+- (void)keyboardHidden {
+#ifndef NDEBUG
+    NSLog(@"[%@] %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+#endif
+    [_scrollView setFrame:CGRectMake(_scrollView.frame.origin.x,
+                                     _scrollView.frame.origin.y,
+                                     _scrollView.frame.size.width,
+                                     _scrollView.frame.size.height + 216.0f)];
+    
+    [_scrollView setContentSize:CGSizeMake(320, _scrollView.frame.size.height)];
+}
+
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)back:(id)sender {
@@ -58,6 +123,14 @@
     [ws postResource:res forController:self];
 }
 
+- (IBAction)hideKeyboard:(id)sender {
+#ifndef NDEBUG
+    NSLog(@"[%@] %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+#endif
+    
+    [_urlTextField resignFirstResponder];
+}
+
 #pragma mark - UITextFieldDelegate
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
 #ifndef NDEBUG
@@ -69,9 +142,24 @@
     } else if (textField == _descriptionTextField) {
         [_urlTextField becomeFirstResponder];
     } else if (textField == _urlTextField) {
-        [textField resignFirstResponder];
-        [self save:textField];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"hide" object:nil];
     }
+    
+    return YES;
+}
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+#ifndef NDEBUG
+    NSLog(@"[%@] %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+#endif
+    
+    selectedTextField = textField;
+    
+    [_scrollView scrollRectToVisible:CGRectMake(selectedTextField.frame.origin.x,
+                                                selectedTextField.frame.origin.y,
+                                                selectedTextField.frame.size.width,
+                                                selectedTextField.frame.size.height+30.f)
+                            animated:YES];
     
     return YES;
 }

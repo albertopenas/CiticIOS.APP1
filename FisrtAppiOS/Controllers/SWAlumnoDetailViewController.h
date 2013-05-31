@@ -12,7 +12,7 @@
 #import <MapKit/MapKit.h>
 #import <UIKit/UIKit.h>
 
-@interface SWAlumnoDetailViewController : UIViewController <SWLocationManagerDelegate, UIGestureRecognizerDelegate>
+@interface SWAlumnoDetailViewController : UIViewController <SWLocationManagerDelegate, UIGestureRecognizerDelegate, MKMapViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *emailLabel;

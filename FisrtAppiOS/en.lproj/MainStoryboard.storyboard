@@ -347,6 +347,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="275" id="KaG-Nc-dyW"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="ceb-Iy-VXS" id="KsP-No-jUt"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -560,44 +563,83 @@
                                         </connections>
                                     </barButtonItem>
                                 </items>
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre del recurso" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lPs-rO-GcF">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="next"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLH-9B-ymP">
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre del recurso" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lPs-rO-GcF">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="next"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="nHj-oa-py1" id="gDA-wc-rUA"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripción" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SK3-xD-Ho6">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="nHj-oa-py1" id="19j-1D-BUc"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Url de acceso" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ogv-0W-Y6z">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" returnKeyType="send"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="nHj-oa-py1" id="Pjp-t2-mEc"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Nombre:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gio-Iv-fYJ">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Descripción" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKk-Sb-c1g">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Url (http://)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hse-Um-maH">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="lPs-rO-GcF" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="4Dw-CL-8Bm"/>
+                                    <constraint firstItem="Hse-Um-maH" firstAttribute="top" secondItem="rLH-9B-ymP" secondAttribute="top" constant="180" id="BLz-WK-QPa"/>
+                                    <constraint firstAttribute="trailing" secondItem="mKk-Sb-c1g" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="MA6-Vd-E6s"/>
+                                    <constraint firstAttribute="trailing" secondItem="ogv-0W-Y6z" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="PJB-SI-ywU"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hse-Um-maH" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="PPg-Hm-gvm"/>
+                                    <constraint firstItem="mKk-Sb-c1g" firstAttribute="leading" secondItem="rLH-9B-ymP" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Q5j-1u-yrY"/>
+                                    <constraint firstAttribute="trailing" secondItem="SK3-xD-Ho6" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="QME-PM-37n"/>
+                                    <constraint firstAttribute="trailing" secondItem="gio-Iv-fYJ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Uga-wN-Yt3"/>
+                                    <constraint firstItem="ogv-0W-Y6z" firstAttribute="leading" secondItem="rLH-9B-ymP" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="V5M-cn-VrK"/>
+                                    <constraint firstItem="gio-Iv-fYJ" firstAttribute="top" secondItem="rLH-9B-ymP" secondAttribute="top" constant="28" id="bOU-gM-lKx"/>
+                                    <constraint firstItem="Hse-Um-maH" firstAttribute="leading" secondItem="rLH-9B-ymP" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="g88-fH-3iX"/>
+                                    <constraint firstItem="mKk-Sb-c1g" firstAttribute="top" secondItem="rLH-9B-ymP" secondAttribute="top" constant="103" id="gCZ-rR-1fp"/>
+                                    <constraint firstItem="SK3-xD-Ho6" firstAttribute="top" secondItem="mKk-Sb-c1g" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ksd-tG-S3f"/>
+                                    <constraint firstItem="lPs-rO-GcF" firstAttribute="top" secondItem="gio-Iv-fYJ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="nWV-Eb-aG3"/>
+                                    <constraint firstAttribute="bottom" secondItem="ogv-0W-Y6z" secondAttribute="bottom" constant="183" id="pT9-6u-nBs"/>
+                                    <constraint firstItem="gio-Iv-fYJ" firstAttribute="leading" secondItem="rLH-9B-ymP" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="qQE-VY-EFZ"/>
+                                    <constraint firstItem="lPs-rO-GcF" firstAttribute="leading" secondItem="rLH-9B-ymP" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="qiB-fG-8pX"/>
+                                    <constraint firstItem="ogv-0W-Y6z" firstAttribute="top" secondItem="Hse-Um-maH" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="sbv-lX-GG5"/>
+                                    <constraint firstItem="SK3-xD-Ho6" firstAttribute="leading" secondItem="rLH-9B-ymP" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="xDB-wP-L4e"/>
+                                    <constraint firstItem="lPs-rO-GcF" firstAttribute="centerX" secondItem="rLH-9B-ymP" secondAttribute="centerX" type="default" id="ypR-nh-Ma8"/>
+                                </constraints>
                                 <connections>
-                                    <outlet property="delegate" destination="nHj-oa-py1" id="gDA-wc-rUA"/>
+                                    <outlet property="delegate" destination="nHj-oa-py1" id="VWB-gL-EDx"/>
                                 </connections>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripción" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SK3-xD-Ho6">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
-                                <connections>
-                                    <outlet property="delegate" destination="nHj-oa-py1" id="19j-1D-BUc"/>
-                                </connections>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Url de acceso" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ogv-0W-Y6z">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" returnKeyType="send"/>
-                                <connections>
-                                    <outlet property="delegate" destination="nHj-oa-py1" id="Pjp-t2-mEc"/>
-                                </connections>
-                            </textField>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gi6-ba-mhw" firstAttribute="top" secondItem="SSV-hE-Gf1" secondAttribute="top" type="default" id="16D-rW-iKn"/>
                             <constraint firstItem="gi6-ba-mhw" firstAttribute="leading" secondItem="SSV-hE-Gf1" secondAttribute="leading" type="default" id="2Op-5b-KwE"/>
-                            <constraint firstItem="lPs-rO-GcF" firstAttribute="leading" secondItem="SSV-hE-Gf1" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="2vx-Xk-S10"/>
-                            <constraint firstAttribute="trailing" secondItem="lPs-rO-GcF" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="GIh-Pc-RxI"/>
-                            <constraint firstItem="SK3-xD-Ho6" firstAttribute="top" secondItem="SSV-hE-Gf1" secondAttribute="top" constant="117" id="PGH-fl-LZq"/>
-                            <constraint firstAttribute="trailing" secondItem="SK3-xD-Ho6" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="PjZ-PL-dVj"/>
-                            <constraint firstItem="lPs-rO-GcF" firstAttribute="top" secondItem="SSV-hE-Gf1" secondAttribute="top" constant="66" id="RkX-qW-MXs"/>
+                            <constraint firstItem="rLH-9B-ymP" firstAttribute="trailing" secondItem="SSV-hE-Gf1" secondAttribute="trailing" type="default" id="5Ki-fc-wLq"/>
+                            <constraint firstAttribute="bottom" secondItem="rLH-9B-ymP" secondAttribute="bottom" constant="-6" id="AXz-y0-t5C"/>
+                            <constraint firstItem="rLH-9B-ymP" firstAttribute="leading" secondItem="SSV-hE-Gf1" secondAttribute="leading" type="default" id="Mbx-a4-GBF"/>
+                            <constraint firstItem="rLH-9B-ymP" firstAttribute="top" secondItem="gi6-ba-mhw" secondAttribute="bottom" type="default" id="Uu6-M8-FgB"/>
                             <constraint firstItem="gi6-ba-mhw" firstAttribute="trailing" secondItem="SSV-hE-Gf1" secondAttribute="trailing" type="default" id="cGI-0k-JYz"/>
-                            <constraint firstItem="ogv-0W-Y6z" firstAttribute="leading" secondItem="SSV-hE-Gf1" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="d6E-vn-cpl"/>
-                            <constraint firstItem="ogv-0W-Y6z" firstAttribute="top" secondItem="SSV-hE-Gf1" secondAttribute="top" constant="167" id="f8X-rr-IRK"/>
-                            <constraint firstAttribute="trailing" secondItem="ogv-0W-Y6z" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="hTb-tf-94Y"/>
-                            <constraint firstItem="SK3-xD-Ho6" firstAttribute="leading" secondItem="SSV-hE-Gf1" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="tSU-Qc-sbT"/>
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
@@ -606,12 +648,13 @@
                     <connections>
                         <outlet property="descriptionTextField" destination="SK3-xD-Ho6" id="XSn-TS-Gy6"/>
                         <outlet property="nameTextField" destination="lPs-rO-GcF" id="84k-qS-aVh"/>
+                        <outlet property="scrollView" destination="rLH-9B-ymP" id="yNj-83-mQB"/>
                         <outlet property="urlTextField" destination="ogv-0W-Y6z" id="Fjz-HC-vhI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cQw-Lu-zG6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="281" y="2094"/>
+            <point key="canvasLocation" x="321" y="2086"/>
         </scene>
         <!--Resource Deteail View Controller - Recurso-->
         <scene sceneID="MX4-1i-su7">
@@ -718,68 +761,6 @@
         <image name="first.png" width="30" height="30"/>
         <image name="first@2x.png" width="60" height="60"/>
     </resources>
-    <classes>
-        <class className="AlumnosTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AlumnosTableViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SWAlumnoDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWAlumnoDetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="goToDetail:"/>
-                <relationship kind="outlet" name="avatarImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="emailLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="SWCellAlumno" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWCellAlumno.h"/>
-            <relationships>
-                <relationship kind="outlet" name="avatarImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="cityLbl" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="emailLbl" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="nameLbl" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="SWClasesTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWClasesTableViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="editMode:"/>
-            </relationships>
-        </class>
-        <class className="SWImageDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWImageDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="avatarImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="SWResourceDeteailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWResourceDeteailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="SWResourceFormViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWResourceFormViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="save:"/>
-                <relationship kind="outlet" name="descriptionTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="nameTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="urlTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="SWResourcesTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWResourcesTableViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="showForm:"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
