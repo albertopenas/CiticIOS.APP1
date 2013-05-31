@@ -8,6 +8,7 @@
 #import "Alumno.h"
 #import "UIImageView+AFNetworking.h"
 #import "SWAlumnoDetailViewController.h"
+#import "SWImageDetailViewController.h"
 #import "CiticAnnotation.h"
 #import "BasicAnnotation.h"
 
@@ -79,6 +80,25 @@
     [_mapView setRegion:region animated:YES];
 }
 
+- (void)drawRoutes {
+#ifndef NDEBUG
+    NSLog(@"[%@] %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+#endif
+    
+    CLLocation *loc1 = [[CLLocation alloc] initWithLatitude:43.3222746
+                                                  longitude:-8.403070];
+    CLLocation *loc2 = [[CLLocation alloc] initWithLatitude:43.3213746
+                                                  longitude:-8.411070];
+    CLLocation *loc3 = [[CLLocation alloc] initWithLatitude:43.3212546
+                                                  longitude:-8.414570];
+    
+    NSArray *coordinates = [NSArray arrayWithObjects:loc1.coordinate, loc2.coordinate, loc3.co,nil];
+    
+    MKPolyline *polyline = [MKPolyline polylineWithCoordinates:coordinates count:3];
+
+}
+
+
 
 - (void)locationError:(NSError *)error {
 #ifndef NDEBUG
@@ -86,6 +106,32 @@
 #endif
     
 }
+
+- (IBAction)goToDetail:(id)sender {
+#ifndef NDEBUG
+    NSLog(@"[%@] %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+#endif
+    
+    [self performSegueWithIdentifier:@"ImageDetail" sender:_alumno];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+#ifndef NDEBUG
+    NSLog(@"[%@] %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+#endif
+    
+    SWImageDetailViewController *controller = segue.destinationViewController;
+    controller.avatarUrlString = ((Alumno *)sender).avatarUrl.absoluteString;
+}
+
+
+
+
+
+
+
+
+
 
 
 

@@ -333,11 +333,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="first@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="DHa-Yf-Eq5">
+                            <imageView contentMode="scaleAspectFill" image="first@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="DHa-Yf-Eq5">
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="124" id="D4m-Wh-AAw"/>
                                     <constraint firstAttribute="height" constant="85" id="UMX-66-4w6"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="S86-Wg-vqJ" appends="YES" id="icZ-dh-usb"/>
+                                </connections>
                             </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8KN-Bj-xsQ">
                                 <constraints>
@@ -367,11 +371,62 @@
                         <outlet property="emailLabel" destination="029-mD-EIb" id="YQ4-EC-9sh"/>
                         <outlet property="mapView" destination="8KN-Bj-xsQ" id="h8P-sY-VRN"/>
                         <outlet property="nameLabel" destination="HVw-Sq-ly7" id="JRQ-XT-fVr"/>
+                        <segue destination="bKr-GE-xrg" kind="push" identifier="ImageDetail" id="KaA-Y5-IpB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dP1-HQ-dfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="S86-Wg-vqJ">
+                    <connections>
+                        <action selector="goToDetail:" destination="ceb-Iy-VXS" id="jKy-J5-bEL"/>
+                        <outlet property="delegate" destination="ceb-Iy-VXS" id="PjF-Xe-UKO"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="349" y="143"/>
+        </scene>
+        <!--Image Detail View Controller - Avatar-->
+        <scene sceneID="ayn-Qq-QvU">
+            <objects>
+                <viewController id="bKr-GE-xrg" customClass="SWImageDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uPA-Nc-zdp">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gys-XH-W3R">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="1hb-PC-UCr"/>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1hb-PC-UCr" firstAttribute="bottom" secondItem="gys-XH-W3R" secondAttribute="bottom" type="default" id="IV6-dR-51J"/>
+                                    <constraint firstItem="1hb-PC-UCr" firstAttribute="leading" secondItem="gys-XH-W3R" secondAttribute="leading" type="default" id="M4G-rt-ruz"/>
+                                    <constraint firstItem="1hb-PC-UCr" firstAttribute="centerY" secondItem="gys-XH-W3R" secondAttribute="centerY" type="default" id="Qdb-eV-Nwm"/>
+                                    <constraint firstItem="1hb-PC-UCr" firstAttribute="trailing" secondItem="gys-XH-W3R" secondAttribute="trailing" type="default" id="gkj-0b-tf6"/>
+                                    <constraint firstItem="1hb-PC-UCr" firstAttribute="centerX" secondItem="gys-XH-W3R" secondAttribute="centerX" type="default" id="kTA-2L-x3s"/>
+                                    <constraint firstItem="1hb-PC-UCr" firstAttribute="top" secondItem="gys-XH-W3R" secondAttribute="top" type="default" id="zwQ-z0-Ibw"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="bKr-GE-xrg" id="Ivx-Fn-eCY"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gys-XH-W3R" firstAttribute="leading" secondItem="uPA-Nc-zdp" secondAttribute="leading" type="default" id="GHd-xf-ShL"/>
+                            <constraint firstItem="gys-XH-W3R" firstAttribute="top" secondItem="uPA-Nc-zdp" secondAttribute="top" type="default" id="Q0y-ES-w31"/>
+                            <constraint firstItem="gys-XH-W3R" firstAttribute="trailing" secondItem="uPA-Nc-zdp" secondAttribute="trailing" type="default" id="mpe-cg-8Y4"/>
+                            <constraint firstItem="gys-XH-W3R" firstAttribute="bottom" secondItem="uPA-Nc-zdp" secondAttribute="bottom" type="default" id="xOl-iA-sBL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Avatar" id="vsv-8G-FBc"/>
+                    <connections>
+                        <outlet property="avatarImageView" destination="1hb-PC-UCr" id="9xt-tv-ySo"/>
+                        <outlet property="scrollView" destination="gys-XH-W3R" id="cjM-Dp-aEY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tzz-rC-DWW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="143"/>
         </scene>
         <!--Clases Table View Controller - Clases-->
         <scene sceneID="Xd9-Vm-emD">
@@ -663,6 +718,68 @@
         <image name="first.png" width="30" height="30"/>
         <image name="first@2x.png" width="60" height="60"/>
     </resources>
+    <classes>
+        <class className="AlumnosTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AlumnosTableViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SWAlumnoDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWAlumnoDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="goToDetail:"/>
+                <relationship kind="outlet" name="avatarImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="emailLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SWCellAlumno" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWCellAlumno.h"/>
+            <relationships>
+                <relationship kind="outlet" name="avatarImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="cityLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="emailLbl" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="nameLbl" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SWClasesTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWClasesTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="editMode:"/>
+            </relationships>
+        </class>
+        <class className="SWImageDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWImageDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="avatarImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="SWResourceDeteailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWResourceDeteailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="SWResourceFormViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWResourceFormViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="save:"/>
+                <relationship kind="outlet" name="descriptionTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="nameTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="urlTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="SWResourcesTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWResourcesTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="showForm:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

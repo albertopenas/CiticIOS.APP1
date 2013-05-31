@@ -29,6 +29,7 @@
 		6E4FA276173D17CF008C5F70 /* AlumnosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FA275173D17CF008C5F70 /* AlumnosTableViewController.m */; };
 		6E4FA27A173D1C05008C5F70 /* SWCellAlumno.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FA279173D1C05008C5F70 /* SWCellAlumno.m */; };
 		6E4FA27C173D209A008C5F70 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4FA27B173D209A008C5F70 /* MapKit.framework */; };
+		6E8DB51F17589BAD00791835 /* SWImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DB51E17589BAD00791835 /* SWImageDetailViewController.m */; };
 		6EBE610E1757658E0019FF07 /* SWAlumnoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBE610D1757658E0019FF07 /* SWAlumnoDetailViewController.m */; };
 		6EBE61101757673D0019FF07 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBE610F1757673D0019FF07 /* CoreLocation.framework */; };
 		6EBE6112175767500019FF07 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBE6111175767500019FF07 /* CoreMotion.framework */; };
@@ -106,6 +107,8 @@
 		6E4FA278173D1C05008C5F70 /* SWCellAlumno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCellAlumno.h; sourceTree = "<group>"; };
 		6E4FA279173D1C05008C5F70 /* SWCellAlumno.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCellAlumno.m; sourceTree = "<group>"; };
 		6E4FA27B173D209A008C5F70 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6E8DB51D17589BAD00791835 /* SWImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWImageDetailViewController.h; path = Controllers/SWImageDetailViewController.h; sourceTree = "<group>"; };
+		6E8DB51E17589BAD00791835 /* SWImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWImageDetailViewController.m; path = Controllers/SWImageDetailViewController.m; sourceTree = "<group>"; };
 		6E90D4441757F3A1002A3A9A /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		6EBE610C1757658E0019FF07 /* SWAlumnoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWAlumnoDetailViewController.h; path = Controllers/SWAlumnoDetailViewController.h; sourceTree = "<group>"; };
 		6EBE610D1757658E0019FF07 /* SWAlumnoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWAlumnoDetailViewController.m; path = Controllers/SWAlumnoDetailViewController.m; sourceTree = "<group>"; };
@@ -327,6 +330,8 @@
 				6EE096B4174F8ABA005E8BD1 /* SWResourceFormViewController.m */,
 				6EBE610C1757658E0019FF07 /* SWAlumnoDetailViewController.h */,
 				6EBE610D1757658E0019FF07 /* SWAlumnoDetailViewController.m */,
+				6E8DB51D17589BAD00791835 /* SWImageDetailViewController.h */,
+				6E8DB51E17589BAD00791835 /* SWImageDetailViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -556,6 +561,7 @@
 				6EBE611517576BD20019FF07 /* CiticAnnotation.m in Sources */,
 				6EBE6118175770010019FF07 /* SWLocationManager.m in Sources */,
 				6EBE611B17577A000019FF07 /* BasicAnnotation.m in Sources */,
+				6E8DB51F17589BAD00791835 /* SWImageDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
