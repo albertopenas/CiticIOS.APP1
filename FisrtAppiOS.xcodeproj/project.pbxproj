@@ -29,6 +29,15 @@
 		6E4FA276173D17CF008C5F70 /* AlumnosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FA275173D17CF008C5F70 /* AlumnosTableViewController.m */; };
 		6E4FA27A173D1C05008C5F70 /* SWCellAlumno.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FA279173D1C05008C5F70 /* SWCellAlumno.m */; };
 		6E4FA27C173D209A008C5F70 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4FA27B173D209A008C5F70 /* MapKit.framework */; };
+		6E5F6A1B175F322100F3DD76 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5F6A1A175F322100F3DD76 /* MediaPlayer.framework */; };
+		6E5F6A1D175F322C00F3DD76 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5F6A1C175F322C00F3DD76 /* AVFoundation.framework */; };
+		6E5F6A1F175F326A00F3DD76 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5F6A1E175F326A00F3DD76 /* AudioToolbox.framework */; };
+		6E5F6A22175F32B100F3DD76 /* SWMusicLibraryAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F6A21175F32B100F3DD76 /* SWMusicLibraryAccess.m */; };
+		6E5F6A25175F375400F3DD76 /* SWMusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F6A24175F375400F3DD76 /* SWMusicTableViewController.m */; };
+		6E5F6A28175F50CC00F3DD76 /* SWMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F6A27175F50CC00F3DD76 /* SWMusicPlayer.m */; };
+		6E5F6A2B175F59D100F3DD76 /* SWPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F6A2A175F59D100F3DD76 /* SWPlayerViewController.m */; };
+		6E5F6A2E175F644600F3DD76 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F6A2D175F644600F3DD76 /* AudioStreamer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6E5F6A30175F648E00F3DD76 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5F6A2F175F648E00F3DD76 /* CFNetwork.framework */; };
 		6E8DB51F17589BAD00791835 /* SWImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DB51E17589BAD00791835 /* SWImageDetailViewController.m */; };
 		6EBE610E1757658E0019FF07 /* SWAlumnoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBE610D1757658E0019FF07 /* SWAlumnoDetailViewController.m */; };
 		6EBE61101757673D0019FF07 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBE610F1757673D0019FF07 /* CoreLocation.framework */; };
@@ -107,6 +116,20 @@
 		6E4FA278173D1C05008C5F70 /* SWCellAlumno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCellAlumno.h; sourceTree = "<group>"; };
 		6E4FA279173D1C05008C5F70 /* SWCellAlumno.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCellAlumno.m; sourceTree = "<group>"; };
 		6E4FA27B173D209A008C5F70 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6E5F6A1A175F322100F3DD76 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		6E5F6A1C175F322C00F3DD76 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6E5F6A1E175F326A00F3DD76 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6E5F6A20175F32B000F3DD76 /* SWMusicLibraryAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMusicLibraryAccess.h; sourceTree = "<group>"; };
+		6E5F6A21175F32B100F3DD76 /* SWMusicLibraryAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMusicLibraryAccess.m; sourceTree = "<group>"; };
+		6E5F6A23175F375400F3DD76 /* SWMusicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWMusicTableViewController.h; path = Controllers/SWMusicTableViewController.h; sourceTree = "<group>"; };
+		6E5F6A24175F375400F3DD76 /* SWMusicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWMusicTableViewController.m; path = Controllers/SWMusicTableViewController.m; sourceTree = "<group>"; };
+		6E5F6A26175F50CC00F3DD76 /* SWMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMusicPlayer.h; sourceTree = "<group>"; };
+		6E5F6A27175F50CC00F3DD76 /* SWMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMusicPlayer.m; sourceTree = "<group>"; };
+		6E5F6A29175F59D100F3DD76 /* SWPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWPlayerViewController.h; path = Controllers/SWPlayerViewController.h; sourceTree = "<group>"; };
+		6E5F6A2A175F59D100F3DD76 /* SWPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWPlayerViewController.m; path = Controllers/SWPlayerViewController.m; sourceTree = "<group>"; };
+		6E5F6A2C175F644600F3DD76 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
+		6E5F6A2D175F644600F3DD76 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
+		6E5F6A2F175F648E00F3DD76 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		6E8DB51D17589BAD00791835 /* SWImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWImageDetailViewController.h; path = Controllers/SWImageDetailViewController.h; sourceTree = "<group>"; };
 		6E8DB51E17589BAD00791835 /* SWImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWImageDetailViewController.m; path = Controllers/SWImageDetailViewController.m; sourceTree = "<group>"; };
 		6E90D4441757F3A1002A3A9A /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -178,6 +201,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E5F6A30175F648E00F3DD76 /* CFNetwork.framework in Frameworks */,
+				6E5F6A1F175F326A00F3DD76 /* AudioToolbox.framework in Frameworks */,
+				6E5F6A1D175F322C00F3DD76 /* AVFoundation.framework in Frameworks */,
+				6E5F6A1B175F322100F3DD76 /* MediaPlayer.framework in Frameworks */,
 				6EBE6112175767500019FF07 /* CoreMotion.framework in Frameworks */,
 				6EBE61101757673D0019FF07 /* CoreLocation.framework in Frameworks */,
 				6EC0505E174E24C6006047DE /* libsqlite3.dylib in Frameworks */,
@@ -204,6 +231,10 @@
 		6E4FA21F173D1108008C5F70 = {
 			isa = PBXGroup;
 			children = (
+				6E5F6A2F175F648E00F3DD76 /* CFNetwork.framework */,
+				6E5F6A1E175F326A00F3DD76 /* AudioToolbox.framework */,
+				6E5F6A1C175F322C00F3DD76 /* AVFoundation.framework */,
+				6E5F6A1A175F322100F3DD76 /* MediaPlayer.framework */,
 				6EBE6111175767500019FF07 /* CoreMotion.framework */,
 				6EBE610F1757673D0019FF07 /* CoreLocation.framework */,
 				6EC0505D174E24C6006047DE /* libsqlite3.dylib */,
@@ -332,6 +363,10 @@
 				6EBE610D1757658E0019FF07 /* SWAlumnoDetailViewController.m */,
 				6E8DB51D17589BAD00791835 /* SWImageDetailViewController.h */,
 				6E8DB51E17589BAD00791835 /* SWImageDetailViewController.m */,
+				6E5F6A23175F375400F3DD76 /* SWMusicTableViewController.h */,
+				6E5F6A24175F375400F3DD76 /* SWMusicTableViewController.m */,
+				6E5F6A29175F59D100F3DD76 /* SWPlayerViewController.h */,
+				6E5F6A2A175F59D100F3DD76 /* SWPlayerViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -348,6 +383,10 @@
 		6EC05059174E2361006047DE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				6E5F6A2C175F644600F3DD76 /* AudioStreamer.h */,
+				6E5F6A2D175F644600F3DD76 /* AudioStreamer.m */,
+				6E5F6A20175F32B000F3DD76 /* SWMusicLibraryAccess.h */,
+				6E5F6A21175F32B100F3DD76 /* SWMusicLibraryAccess.m */,
 				6EBE6116175770010019FF07 /* SWLocationManager.m */,
 				6EBE6117175770010019FF07 /* SWLocationManager.h */,
 				6EC05075174E4266006047DE /* MBProgressHUD.m */,
@@ -357,6 +396,8 @@
 				6EC0505A174E23AC006047DE /* SQLiteAccess.h */,
 				6EC0505B174E23AC006047DE /* SQLiteAccess.m */,
 				6E90D4441757F3A1002A3A9A /* Constants.h */,
+				6E5F6A26175F50CC00F3DD76 /* SWMusicPlayer.h */,
+				6E5F6A27175F50CC00F3DD76 /* SWMusicPlayer.m */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -562,6 +603,11 @@
 				6EBE6118175770010019FF07 /* SWLocationManager.m in Sources */,
 				6EBE611B17577A000019FF07 /* BasicAnnotation.m in Sources */,
 				6E8DB51F17589BAD00791835 /* SWImageDetailViewController.m in Sources */,
+				6E5F6A22175F32B100F3DD76 /* SWMusicLibraryAccess.m in Sources */,
+				6E5F6A25175F375400F3DD76 /* SWMusicTableViewController.m in Sources */,
+				6E5F6A28175F50CC00F3DD76 /* SWMusicPlayer.m in Sources */,
+				6E5F6A2B175F59D100F3DD76 /* SWPlayerViewController.m in Sources */,
+				6E5F6A2E175F644600F3DD76 /* AudioStreamer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
